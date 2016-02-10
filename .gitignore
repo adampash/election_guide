@@ -9,7 +9,10 @@
 /log/
 /out/
 /resources/public/js/compiled/**
+/resources/public/css
+/resources/tmp
 /target/
 figwheel_server.log
 pom.xml
 pom.xml.asc
+.sass-cache
