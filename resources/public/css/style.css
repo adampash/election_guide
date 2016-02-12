@@ -1,19 +1,54 @@
-h1 {
-  color: green; }
+body {
+  margin: 0;
+  padding: 0; }
 
 .container {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 800px; }
+
+.candidates {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.categories {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.category {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  padding: 10px; }
+
+.candidate {
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  margin: 10px;
+  max-width: 100px; }
+  .candidate.selected {
+    max-width: 120px; }
+  .candidate img {
+    width: 100%; }
+    .candidate img.republican {
+      border: 2px solid red; }
+    .candidate img.democrat {
+      border: 2px solid blue; }
+  .candidate h4 {
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 5px 0;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@
                  [ring.middleware.logger "0.5.0"]
                  [compojure "1.4.0"]
                  [org.omcljs/om "1.0.0-alpha28"]
+                 [csv-map "0.1.2"]
                  [environ "1.0.2"]]
 
   :plugins [[lein-cljsbuild "1.1.1"]
@@ -91,7 +92,7 @@
                              [com.cemerick/piggieback "0.2.1"]
                              [org.clojure/tools.nrepl "0.2.12"]]
 
-              :plugins [[lein-figwheel "0.5.0-6"]
+              :plugins [[lein-figwheel "0.5.0-5"]
                         [lein-doo "0.1.6"]]
 
               :cljsbuild {:builds

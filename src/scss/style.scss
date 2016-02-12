@@ -1,9 +1,56 @@
-h1 {
-  color: green;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  align-items: center;
+  max-width: 800px;
+}
+
+.candidates {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.candidate {
+  cursor: pointer;
+  flex: 1 1 100px;
+  margin: 10px;
+  max-width: 100px;
+
+  &.selected {
+    max-width: 120px;
+  }
+
+  img {
+    width: 100%;
+
+    &.republican {
+      border: 2px solid red;
+    }
+
+    &.democrat {
+      border: 2px solid blue;
+    }
+  }
+
+  h4 {
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 5px 0;
+    text-align: center;
+  }
+
 }

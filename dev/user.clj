@@ -41,4 +41,7 @@
   (figwheel/stop-figwheel!)
   (stop-sass @config))
 
+(defn reload []
+  (stop)
+  (run))
 (def browser-repl figwheel/cljs-repl)
